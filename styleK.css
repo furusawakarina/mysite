@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@media screen and (max-width: 600px) {
+    h1, h2 {
+        font-size: 2rem;
+	
+    }
+    table {
+        font-size: 0.8rem;
+    }
+}
+@font-face {
+    font-family: 'Hangyaku';
+    src: url('path/to/Hangyaku-G3rpg.ttf') format('truetype');
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+ body {
+    font-family: 'Hangyaku', sans-serif;
+	font-size: 30px;
+	letter-spacing: 1.5px;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+
+	background: linear-gradient(120deg, #f9fcff, #bde5ff, #e0f7fa);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+}
+
+/* 見出し */
+h1 {
+	font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    color: #0083e8;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    animation: fadeIn 2s ease-in; 
+}
+
+h2 {
+	font-family: 'Sacramento', cursive;
+	font-size: 3rem;
+	color: #4f8ad6;
+}
+
+hr {
+	  border-width: 0 0 8px;
+	  border-style: solid;
+	  border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1"><circle fill="hsla(0, 0%, 65%, 1.0)" cx="1" cy="0.5" r="0.5"/></svg>') 0 0 100% repeat;
+	   width: 400px;
+	}
+
+/* 段落 */
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+/* リスト */
+ol {
+    
+    text-align: left;
+    display: inline-block;
+    padding: 10px;
+    font-size: 23px;
+    
+}
+
+ul {
+	display: inline-block;
+	font-size: 2.0rem;
+}
+table {
+            border-collapse: collapse;
+		width: 100%; 
+    		max-width: 800px; 
+    		margin: 0 auto; 
+		border-collapse: collapse;
+        }
+        th, td {
+            border: 2px dotted #f0f8ff;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            color: #7da8c9;
+            font-size: 1.5rem;
+        }
+        td {
+            color: #445c6d;
+            font-size: 1.3rem;
+        }
+
+img {
+	width: 200px;
+	height: 200px;
+    margin-top: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
