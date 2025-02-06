@@ -1,15 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
-@media screen and (max-width: 600px)(max-hight: 600px) {
-    h1, h2 {
-        font-size: 2rem;
-	
-    }
-    table {
-        font-size: 0.8rem;
-    }
-}
+@media screen and (max-width: 600px)(max-hight: 600px) 
 @font-face {
     font-family: 'Hangyaku';
     src: url('path/to/Hangyaku-G3rpg.ttf') format('truetype');
@@ -28,6 +20,7 @@
     background-color: #ffffff;
     color: #333;
     margin: 0;
+	height: 100vh;
     padding: 20px;
     text-align: center;
 
@@ -38,7 +31,7 @@
 
 /* 見出し */
 h1 {
-	font-family: 'Sacramento', cursive;
+	letter-spacing: 2.5px
     font-size: 3rem;
     color: #0083e8;
     margin-bottom: 10px;
